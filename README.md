@@ -1,10 +1,10 @@
 # EncryptedSMS
 
-A mobile SMS application which utilizes AES encryption and Google Firestore for secure key storage to protect messages contents. 
-SMS messages are encrypted before being sent to the target address, causing the recipient to only see an encrypted message within
-their devices sms inbox, unless in the app as well. When the message is encrypted, a unique ID is generated to go along with the message, 
-and a key is generated and sent alongside this ID to a Firestore database where the recipient, upon receiving the message, can use the 
-address the message came from and the message ID to locate the encryption key to decrypt the message. 
+A mobile SMS application built for CSI 4480 at Oakland University which utilizes AES encryption and Google Firestore for secure key 
+storage to protect messages contents. SMS messages are encrypted before being sent to the target address, causing the recipient to 
+only see an encrypted message within their devices sms inbox, unless in the app as well. When the message is encrypted, a unique ID 
+is generated to go along with the message, and a key is generated and sent alongside this ID to a Firestore database where the recipient, 
+upon receiving the message, can use the address the message came from and the message ID to locate the encryption key to decrypt the message. 
 
 ## Installation
 No APK was generated for this, in order to run this app, you must have Android Studio as well as two emulators within Android Studio
