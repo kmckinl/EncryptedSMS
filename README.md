@@ -6,7 +6,7 @@ their devices sms inbox, unless in the app as well. When the message is encrypte
 and a key is generated and sent alongside this ID to a Firestore database where the recipient, upon receiving the message, can use the 
 address the message came from and the message ID to locate the encryption key to decrypt the message. 
 
-Installation
+## Installation
 No APK was generated for this, in order to run this app, you must have Android Studio as well as two emulators within Android Studio
 using API 30 or above. The gradle will build all necessary dependencies, the only information you will need are the port numbers
 of the emulators.
