@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "2366965241",
+    "project_id": "encryptedsms-e45fb",
+    "storage_bucket": "encryptedsms-e45fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2366965241:android:1d7c2764eedfab803c6928",
+        "android_client_info": {
+          "package_name": "com.example.encryptionsms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2366965241-7l1s6j3pbfbh2hinle28ldjridq7r35a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.encryptionsms",
+            "certificate_hash": "e92621793da77b982ebf2d6e7097dbd2f9241d9d"
+          }
+        },
+        {
+          "client_id": "2366965241-jpo1u5q8bu12ces7jh42jq5a8il6npnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz89kGKBl5nv3drKSAyVvnrKwZc1d7sg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2366965241-jpo1u5q8bu12ces7jh42jq5a8il6npnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
