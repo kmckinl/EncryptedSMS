@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // ArrayAdapter usage from Adam Sinicki - www.androidauthority.com/how-to-create-an-sms-app-721438/
         messagesView = (ListView) findViewById(R.id.messagesList);
         messagesArrayView = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, messages);
         messagesView.setAdapter(messagesArrayView);
@@ -130,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Keygenerator usage from Android documentation, cipher usage from programmerworld
         try {
             KeyGenerator keygen = KeyGenerator.getInstance("AES");
             keygen.init(256);
@@ -142,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        // Checking permissions from Adam Sinicki - www.androidauthority.com/how-to-create-an-sms-app-721438/
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED) {
                 //readSMS();
@@ -163,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Checking permissions from Adam Sinicki - www.androidauthority.com/how-to-create-an-sms-app-721438/
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED) {
                         //sendSMS();
@@ -243,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void read() {
+        // Read method altered from code from Adam Sinicki - www.androidauthority.com/how-to-create-an-sms-app-721438/
         Cursor cursor = getContentResolver().query(Uri.parse("content://sms/inbox"), null, null, null, null);
         int indexBody = cursor.getColumnIndex("body");
         int indexAddress = cursor.getColumnIndex("address");
@@ -272,6 +277,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String Encryption(String string) {
+        // Encryption altered from code from programmerworld.co/android/create-android-chat-message-app-with-end-to-end-aesadvanced-encryption-standard-method-in-firebase/
         byte[] messageByte = string.getBytes();
 
         byte[] ciphertext = new byte[0];
@@ -295,6 +301,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String Decryption(String string, String sentNumber, String id) {
+        // Decryption altered from code from programmerworld.co/android/create-android-chat-message-app-with-end-to-end-aesadvanced-encryption-standard-method-in-firebase/
         String decryptedString = string;
 
         SecretKey sharedKey = null;
